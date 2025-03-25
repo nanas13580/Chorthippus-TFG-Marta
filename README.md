@@ -39,9 +39,9 @@ Once you clone the repository, your folder structure will be updated to look lik
 
 1. Clone the repository:
 
-   ```bash
+  ```bash
    git clone <repository_url> ~/Chorthippus-TFG-Marta/
-   ```
+  ```
 
 2. Navigate to the project folder:
 
