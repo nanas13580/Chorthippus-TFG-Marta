@@ -72,3 +72,8 @@ Once you clone the repository, your folder structure will be updated to look lik
  ```bash
   python analyse_snp.py
  ```
+7. When finished, you can deactivate the virtual environment:
+
+ ```bash
+  deactivate
+ ```
