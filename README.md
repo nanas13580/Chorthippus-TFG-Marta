@@ -39,8 +39,13 @@ The script assumes that the folder data_chortippus is placed directly on your de
   ```bash
   source venv/bin/activate
   ```
+5. Download the packages
 
-5. You can now run the script using Python:
+   ```bash
+   pip install pandas biopython
+   ```
+
+6. You can now run the script using Python:
 
  ```bash
   python analyse_snp.py
