@@ -40,7 +40,7 @@ Once you clone the repository, your folder structure will be updated to look lik
 1. Clone the repository:
 
   ```bash
-   git clone <repository_url> ~/Chorthippus-TFG-Marta/
+  git clone https://github.com/nanas13580/Chorthippus-TFG-Marta ~/Chorthippus-TFG-Marta/
   ```
 
 2. Navigate to the project folder:
@@ -63,12 +63,12 @@ Once you clone the repository, your folder structure will be updated to look lik
 
 5. Download the packages
 
-   ```bash
+ ```bash
    pip install pandas biopython
-   ```
+ ```
    
 6. You can now run the script using Python:
 
  ```bash
   python analyse_snp.py
-  ```
+ ```
