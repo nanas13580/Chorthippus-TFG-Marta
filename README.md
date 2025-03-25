@@ -1,31 +1,48 @@
 # Chorthippus-TFG-Marta
 
-Make sure you have the required files in a folder named data_chortippus located on your desktop. The folder should contain the following files:
+## Required Files
 
-Base datos genes (Excel file)
+Before cloning the repository, make sure you have the following files in a folder named `data_chortippus` inside `~/Chorthippus-TFG-Marta/`:
 
-gc_onerow_per_locus_transects_separated_DB (Excel file)
+- **Base datos genes** (Excel file)
+- **gc_onerow_per_locus_transects_separated_DB** (Excel file)
+- **catalog_normal_annotated.fasta** (FASTA file)
+- **grasshopperRef.positions** (Positions file)
+- **snp_names** (CSV file)
 
-catalog_normal_annotated.fasta (FASTA file)
+### Folder Structure:
 
-grasshopperRef.positions (Positions file)
+The folder `data_chortippus` should be placed **inside** the project folder `Chorthippus-TFG-Marta`, which should be located in your home directory (`~/`). The full folder structure will look like this. The full folder structure will look like this **before cloning the repository**:
 
-snp_names (CSV file)
+~/Chorthippus-TFG-Marta/
+    └── data_chortippus/
+        ├── Base datos genes.xlsx
+        ├── gc_onerow_per_locus_transects_separated_DB.xlsx
+        ├── catalog_normal_annotated.fasta
+        ├── grasshopperRef.positions
+        └── snp_names.csv
 
-The script assumes that the folder data_chortippus is placed directly on your desktop. If you decide to use a different location, make sure to update the file paths in the script accordingly.
+Once you clone the repository, your folder structure will be updated to look like this:
+
+~/Chorthippus-TFG-Marta/
+    ├── data_chortippus/        # Keep this folder as is (the data files)
+    ├── analyse_snp.py          # Python script for analysis
+    └── README.md               # This README file
+
+**Important:** Do not delete or move the `data_chortippus` folder! It must stay in `~/Chorthippus-TFG-Marta/` for the script to function correctly.
 
 ## Installation and Usage
 
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone <repository_url> ~/Chorthippus-TFG-Marta/
    ```
 
 2. Navigate to the project folder:
 
   ```bash
-  cd <repository_folder>
+  cd ~/Chorthippus-TFG-Marta/
   ```
 
 3. Create a virtual environment:
@@ -39,19 +56,15 @@ The script assumes that the folder data_chortippus is placed directly on your de
   ```bash
   source venv/bin/activate
   ```
+
 5. Download the packages
 
    ```bash
    pip install pandas biopython
    ```
-Note: The data_chortippus folder is included in the .gitignore file, so it is not tracked by Git. You must add the necessary files manually.
-
+   
 6. You can now run the script using Python:
 
  ```bash
   python analyse_snp.py
   ```
-
-## Notes
-
-This project requires a Python environment with the following libraries: pandas, biopython, etc.
