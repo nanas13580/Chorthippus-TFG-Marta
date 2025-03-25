@@ -44,6 +44,7 @@ The script assumes that the folder data_chortippus is placed directly on your de
    ```bash
    pip install pandas biopython
    ```
+Note: The data_chortippus folder is included in the .gitignore file, so it is not tracked by Git. You must add the necessary files manually.
 
 6. You can now run the script using Python:
 
