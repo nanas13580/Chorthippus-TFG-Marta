@@ -2,8 +2,7 @@
 
 ## Required Files (Not Included)
 
-⚠️ This repository **does not include the required data files**
-Before cloning the repository, make sure you have the following files in a folder named `data_chorthippus` inside `~/Chorthippus-TFG-Marta/` :
+⚠️ This repository **does not include the required data files**. Before cloning the repository, make sure you have the following files in a folder named `data_chorthippus` inside `~/Chorthippus-TFG-Marta/` :
 
 - **clines_data_clean.xlsx** (Excel file)
 - **clusters.fasta** (Fasta file)
@@ -48,7 +47,6 @@ Once you clone the repository, your folder structure will be updated to look lik
   ```bash
   cd ~/Chorthippus-TFG-Marta/
   ```
-
 3. Create a virtual environment :
 
   ```bash
