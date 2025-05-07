@@ -1,30 +1,29 @@
-# Chorthippus-TFG-Marta
+# 🦗 Chorthippus-TFG-Marta
 
-## Required Files
+## Required Files (Not Included)
 
-Before cloning the repository, make sure you have the following files in a folder named `data_chortippus` inside `~/Chorthippus-TFG-Marta/`:
+⚠️ This repository **does not include the required data files**
+Before cloning the repository, make sure you have the following files in a folder named `data_chortippus` inside `~/Chorthippus-TFG-Marta/` :
 
-- **Base datos genes** (Excel file)
-- **gc_onerow_per_locus_transects_separated_DB** (Excel file)
-- **catalog_normal_annotated.fasta** (FASTA file)
+- **clines_data_clean.xlsx** (Excel file)
+- **clusters.fasta** (Fasta file)
 - **grasshopperRef.positions** (Positions file)
-- **snp_names** (CSV file)
+- **snp_names** (list of SNP IDs)
 
-### Folder Structure:
+### Folder Structure :
 
-The folder `data_chortippus` should be placed **inside** the project folder `Chorthippus-TFG-Marta`, which should be located in your home directory (`~/`). The full folder structure will look like this. The full folder structure will look like this **before cloning the repository**:
+The folder `data_chortippus` should be placed **inside** the project folder `Chorthippus-TFG-Marta`, which should be located in your home directory (`~/`). The full folder structure will look like this. The full folder structure will look like this **before cloning the repository** :
 
 ```
 ~/Chorthippus-TFG-Marta/  
     └── data_chortippus/  
-        ├── Base datos genes.xlsx  
-        ├── gc_onerow_per_locus_transects_separated_DB.xlsx  
-        ├── catalog_normal_annotated.fasta  
+        ├── clines_data_clean.xlsx  
+        ├── clusters.fasta  
         ├── grasshopperRef.positions  
-        └── snp_names.csv
+        └── snp_names
 ```
 
-Once you clone the repository, your folder structure will be updated to look like this:
+Once you clone the repository, your folder structure will be updated to look like this :
 
 ```
 ~/Chorthippus-TFG-Marta/  
@@ -33,29 +32,29 @@ Once you clone the repository, your folder structure will be updated to look lik
     └── README.md               # This README file
 ```
 
-**Important:** Do not delete or move the `data_chortippus` folder! It must stay in `~/Chorthippus-TFG-Marta/` for the script to function correctly.
+**Important :** Do not delete or move the `data_chortippus` folder! It must stay in `~/Chorthippus-TFG-Marta/` for the script to function correctly.
 
 ## Installation and Usage
 
-1. Clone the repository:
+1. Clone the repository :
 
   ```bash
   git clone https://github.com/nanas13580/Chorthippus-TFG-Marta ~/Chorthippus-TFG-Marta/
   ```
 
-2. Navigate to the project folder:
+2. Navigate to the project folder :
 
   ```bash
   cd ~/Chorthippus-TFG-Marta/
   ```
 
-3. Create a virtual environment:
+3. Create a virtual environment :
 
   ```bash
   python3 -m venv venv
   ```
 
-4. Activate the virtual environment:
+4. Activate the virtual environment :
 
   ```bash
   source venv/bin/activate
@@ -67,13 +66,24 @@ Once you clone the repository, your folder structure will be updated to look lik
    pip install pandas biopython
  ```
    
-6. You can now run the script using Python:
+6. You can now run the script using Python :
 
  ```bash
   python analyse_snp.py
  ```
-7. When finished, you can deactivate the virtual environment:
+7. When finished, you can deactivate the virtual environment :
 
  ```bash
   deactivate
  ```
+## Output
+
+After running the script, the following file will be created :
+
+  ```bash
+ ~/Chorthippus-TFG-Marta/data_chorthippus/snp_sequences_filtered.csv
+  ```
+
+It contains the filtered SNPs, their cluster ID, range, and nucleotide sequence.
+
+
