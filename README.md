@@ -3,7 +3,7 @@
 ## Required Files (Not Included)
 
 ⚠️ This repository **does not include the required data files**
-Before cloning the repository, make sure you have the following files in a folder named `data_chortippus` inside `~/Chorthippus-TFG-Marta/` :
+Before cloning the repository, make sure you have the following files in a folder named `data_chorthippus` inside `~/Chorthippus-TFG-Marta/` :
 
 - **clines_data_clean.xlsx** (Excel file)
 - **clusters.fasta** (Fasta file)
@@ -16,7 +16,7 @@ The folder `data_chortippus` should be placed **inside** the project folder `Cho
 
 ```
 ~/Chorthippus-TFG-Marta/  
-    └── data_chortippus/  
+    └── data_chorthippus/  
         ├── clines_data_clean.xlsx  
         ├── clusters.fasta  
         ├── grasshopperRef.positions  
@@ -27,12 +27,13 @@ Once you clone the repository, your folder structure will be updated to look lik
 
 ```
 ~/Chorthippus-TFG-Marta/  
-    ├── data_chortippus/        # Keep this folder as is (the data files)  
-    ├── analyse_snp.py          # Python script for analysis  
+    ├── data_chorthippus/       # Keep this folder as is (the data files)  
+    ├── analyse_snp.py          # Python script for analysis
+    ├── .gitignore              # Ignore this file  
     └── README.md               # This README file
 ```
 
-**Important :** Do not delete or move the `data_chortippus` folder! It must stay in `~/Chorthippus-TFG-Marta/` for the script to function correctly.
+**Important :** Do not delete or move the `data_chorthippus` folder! It must stay in `~/Chorthippus-TFG-Marta/` for the script to function correctly.
 
 ## Installation and Usage
 
@@ -60,7 +61,7 @@ Once you clone the repository, your folder structure will be updated to look lik
   source venv/bin/activate
   ```
 
-5. Download the packages
+5. Download the packages :
 
  ```bash
    pip install pandas biopython
